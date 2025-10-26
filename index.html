@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DistroSelect</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Maple+Mono&display=swap");
+
+        body {
+            background: black url(/images/wp9790222.png) center/cover no-repeat;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        :root {
+            --main-color: rgba(17, 17, 27, 0);
+            --second-color: rgba(17, 17, 27, 0.1);
+            --accent-color: #fab387;
+            --text-color: white;
+            --font-family: 'Maple Mono', monospace;
+
+        }
+
+        .container {
+            display: flex;
+            background-color: var(--main-color);
+            padding: 2rem;
+            border-radius: 30px;
+            width: 70%;
+            flex-wrap: wrap;
+            gap: 20px;
+            backdrop-filter: blur(30px);
+            transition: 800ms;
+            border: solid 2px rgba(255, 255, 255, 0.1);
+            
+        }
+
+        .distro {
+            border: solid 2px rgba(255, 255, 255, 0.1);
+            flex: auto;
+            background-color: var(--second-color);
+            box-shadow: rgba(255, 255, 255, 0.1) inset 0px 0px 10px;
+            border-radius: 20px;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 500ms;
+        }
+
+        .distro:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+        }
+
+        .distro:active {
+            background-color: rgba(255, 255, 255, 0.5);
+            transform: scale(0.90);
+        }
+
+        .text {
+            color: var(--text-color);
+            font-family: var(--font-family);
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="distro" id="arch">
+            <span class="text">Arch Linux</span>
+        </div>
+        <div class="distro" id="void linux">
+            <span class="text">Void Linux</span>
+        </div>
+        <div class="distro" id="gentoo">
+            <span class="text">Gentoo</span>
+        </div>
+        <div class="distro" id="fedora">
+            <span class="text">Fedora</span>
+        </div>
+        <div class="distro" id="linux mint">
+            <span class="text">Linux Mint</span>
+        </div>
+        <div class="distro" id="ubuntu">
+            <span class="text">Ubuntu</span>
+        </div>
+        <div class="distro" id="debian">
+            <span class="text">Debian</span>
+        </div>
+        <div class="distro" id="nixos">
+            <span class="text">NixOS</span>
+        </div>
+        <div class="distro" id="bedrock linux">
+            <span class="text">Bedrock linux</span>
+        </div>
+        <div class="distro" id="slakware">
+            <span class="text">Slakware</span>
+        </div>
+    </div>
+</body>
+
+</html>
